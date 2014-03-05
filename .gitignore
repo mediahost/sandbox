@@ -1,14 +1,16 @@
 #################
 ## log
 #################
-log/*
-!log/.htacces
-!log/web.config
+/log/*
+!/log/.htaccess
+!/log/web.config
 
 #################
 ## temp
 #################
-temp/
+/temp/*
+!/temp/.htaccess
+!/temp/web.config
 
 
 tmp/
