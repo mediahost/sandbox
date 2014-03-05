@@ -1,23 +1,30 @@
 #################
-## log
+## Log
 #################
 /log/*
 !/log/.htaccess
 !/log/web.config
 
 #################
-## temp
+## Temp
 #################
 /temp/*
 !/temp/.htaccess
 !/temp/web.config
 
+#################
+## Config
+#################
+*.local.neon
 
-tmp/
-purge/
-
+#################
+## Composer
+#################
 composer.lock
 
+#################
+## Vendor (3rd side libs)
+################
 vendor/bin/
 vendor/composer/
 vendor/dg/
@@ -36,3 +43,6 @@ nbproject/
 ## PhpStorm
 ################
 .idea
+
+tmp/
+purge/
