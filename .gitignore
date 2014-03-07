@@ -13,7 +13,7 @@
 !/temp/web.config
 
 #################
-## Config
+## Nette configs
 #################
 *.local.neon
 
@@ -25,14 +25,8 @@ composer.lock
 #################
 ## Vendor (3rd side libs)
 ################
-vendor/bin/
-vendor/composer/
-vendor/dg/
-vendor/doctrine/
-vendor/kdyby/
-vendor/nette/
-vendor/symfony/
-vendor/autoload.php
+/vendor/*
+!/vendor/autoload.php
 
 #################
 ## NetBeans
