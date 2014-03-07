@@ -27,6 +27,7 @@ composer.lock
 ################
 /vendor/*
 !/vendor/autoload.php
+!/vendor/others/*
 
 #################
 ## NetBeans
