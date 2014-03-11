@@ -43,6 +43,7 @@ webloader:
                 - grido.js
                 - grido.ext.js
                 - grido.ajax.js
+                - typeahead.min.js # Must be before jquery.ba-haschange.min.js
                 - jquery.ba-hashchange.min.js
-                - typeahead.min.js
+
                 
