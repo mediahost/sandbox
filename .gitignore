@@ -9,6 +9,7 @@
 ## Temp
 #################
 /temp/*
+/www/webtemp/*
 !/temp/.htaccess
 !/temp/web.config
 
