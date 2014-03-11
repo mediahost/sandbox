@@ -1,15 +1,15 @@
 #################
 ## Log
 #################
-/log/*
+/log/
 !/log/.htaccess
 !/log/web.config
 
 #################
 ## Temp
 #################
-/temp/*
-/www/webtemp/*
+/temp/
+/www/webtemp/
 !/temp/.htaccess
 !/temp/web.config
 
@@ -26,9 +26,9 @@ composer.lock
 #################
 ## Vendor (3rd side libs)
 ################
-/vendor/*
+/vendor/
 !/vendor/autoload.php
-!/vendor/others/*
+!/vendor/others/
 
 #################
 ## NetBeans
