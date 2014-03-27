@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Presenters;
+namespace App\FrontModule\Presenters;
+
+use Nette;
 
 /**
  * Example usage of Grido datagrid component with Doctrine 2 datasource.
@@ -12,10 +14,8 @@ class GridoPresenter extends BasePresenter
     /** @var \App\Components\IGridBookControlFactory @inject */
     public $gridBookControlFactory;
 
-    
-    
     ///// Components /////
-    
+
     /*
      * Grid with Books.
      * @return \App\Components\GridBookControl
@@ -24,4 +24,5 @@ class GridoPresenter extends BasePresenter
     {
         return $this->gridBookControlFactory->create();
     }
+
 }

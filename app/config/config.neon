@@ -5,7 +5,7 @@
 # http://nette.org/security-warning
 #
 includes:
-    - webloader.neon
+    - extensions/webloader.neon
 
 
 parameters:
@@ -19,6 +19,7 @@ php:
 nette:
     application:
         errorPresenter: Error
+        catchExceptions: TRUE
         mapping:
             *: App\*Module\Presenters\*Presenter
 
@@ -37,11 +38,11 @@ extensions:
 
 services:
     # Router
-    router: @App\RouterFactory::createRouter
+    router: @App\Router\RouterFactory::createRouter
 
     # Model
     - App\UserManager
-    - App\RouterFactory
+    - App\Router\RouterFactory
     - App\Model\BookModel(@doctrine.dao(App\Entities\Book))
 
     # Presenters

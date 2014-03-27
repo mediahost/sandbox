@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Presenters;
+namespace App\FrontModule\Presenters;
 
-use Nette,
-	App\Model;
-
+use Nette;
 
 /**
  * Homepage presenter.
@@ -17,14 +15,13 @@ class HomepagePresenter extends BasePresenter
     /** @var \Kdyby\Doctrine\EntityManager @inject */
     public $entityManager;
 
-
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
-     
     }
 
     public function renderDefault($id)
-	{
+    {
 //        $books = $this->entityManager->getDao(\App\Entities\Book::getClassName());
 //
 //        $author = new \App\Entities\Author();
@@ -40,13 +37,12 @@ class HomepagePresenter extends BasePresenter
 //        
 //        $books->save($book);
 //        $this->entityManager->flush();
-        
         //$this->template->books = $this->entityManager->getRepository('App\Entities\Book')->findAll();
-        
 //        foreach ($this->template->books as $book) {
 //            $author = $book->getAuthor();
 //            echo $author->getFirstname() . '&nbsp' . $author->getSurname() . ': ';
 //            echo $book->title . '<br>';
 //        }
-	}
+    }
+
 }

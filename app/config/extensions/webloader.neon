@@ -4,7 +4,7 @@ extensions:
 services:
     wlCssFilter: WebLoader\Filter\CssUrlsFilter(%wwwDir%)
     lessFilter: WebLoader\Filter\LessFilter
-    cssMinFilter: Webloader\Filter\CssMinFilter
+    cssMinFilter: WebLoader\Filter\CssMinFilter
 
 webloader:
     css:
@@ -13,7 +13,7 @@ webloader:
                 - screen.css
                 - bootstrap.css
                 - bootstrap-theme.css
-                - {files: ["*.css", "*.less"], from: %appDir%/presenters} # Nette\Utils\Finder support
+                - {files: ["*.css", "*.less"], from: %appDir%/module/_BaseModule/presenters} # Nette\Utils\Finder support
             filters:
                 - @wlCssFilter
                 - @cssMinFilter
