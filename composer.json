@@ -1,28 +1,39 @@
 {
     "name": "mediahost/sandbox",
-    "description": "The sandbox is a pre-packaged Nette Framework project, basic configured structure for your application.",
-    "homepage": "http://nette.org",
+    "description": "The sandbox for Shopbox ver.2",
+    "homepage": "https://github.com/mediahost/",
     "type": "project",
-    "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+    "license": "MIT",
     "authors": [
         {
-            "name": "David Grudl",
-            "homepage": "http://davidgrudl.com"
+            "name": "Petr Poupě",
+            "email": "pupe.dupe@gmail.com",
+            "homepage": "http://pupitooo.cz/",
+            "role": "Developer"
         },
         {
-            "name": "Nette Community",
-            "homepage": "http://nette.org/contributors"
+            "name": "Martin Šifra",
+            "email": "me@martinsifra.cz",
+            "homepage": "http://martinsifra.cz/",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mediahost/adminer-custom"
         }
     ],
     "require": {
         "php": ">= 5.3.0",
         "nette/nette": "~2.1.1",
-        "dg/adminer-custom": "1.*",
+        "dg/adminer-custom": "@dev",
         "kdyby/doctrine": "1.*",
         "janmarek/webloader": "2.2.0",
         "o5/grido": "dev-master",
         "rm/header": "dev-master",
-        "natxet/CssMin": "dev-master"
+        "natxet/CssMin": "dev-master",
+        "pupitooo/bank": "@dev"
     },
     "require-dev": {
         "nette/tester": "1.1.*@dev"
