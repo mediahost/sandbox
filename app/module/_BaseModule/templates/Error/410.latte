@@ -1,8 +1,28 @@
 {var $robots = noindex}
 
 {block content}
-<h1 n:block=title>Page Not Found</h1>
+<div class="page-inner">
+    <img src="{$basePath}/assets/img/pages/earth.jpg" class="img-responsive" alt="">
+</div>
+<div class="container error-404">
+    <h1>410</h1>
+    <h2>Houston, we have a problem.</h2>
+    <p>
+        The page you requested has been taken off the site. We apologize for the inconvenience.
+    </p>
+    <p>
+        <a href="{$homepage}">Return home</a>
+        <br>
+    </p>
+</div>
+{/block}
 
-<p>The page you requested has been taken off the site. We apologize for the inconvenience.</p>
+{block title}
+Page Not Found
+{/block}
 
-<p><small>error 410</small></p>
+{block bodyClass}
+{include parent}
+page-404-3
+{/block}
+

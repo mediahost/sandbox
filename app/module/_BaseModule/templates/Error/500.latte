@@ -1,17 +1,25 @@
-{layout none}
-<!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="robots" content="noindex">
-<style>
-	body { color: #333; background: white; width: 500px; margin: 100px auto }
-	h1 { font: bold 47px/1.5 sans-serif; margin: .6em 0 }
-	p { font: 21px/1.5 Georgia,serif; margin: 1.5em 0 }
-	small { font-size: 70%; color: gray }
-</style>
+{block content}
+<div class="row">
+    <div class="col-md-12 page-500">
+        <div class=" number">
+            500
+        </div>
+        <div class=" details">
+            <h3>Oops! Something went wrong.</h3>
+            <p>
+                We are fixing it!<br/>
+                Please come back in a while.<br/><br/>
+            </p>
+        </div>
+    </div>
+</div>
+{/block}
 
-<h1>Server Error</h1>
+{block pageTitle}
+Server Error
+{/block}
 
-<p>We're sorry! The server encountered an internal error and
-was unable to complete your request. Please try again later.</p>
-
-<p><small>error 500</small></p>
+{block bodyClass}
+{include parent}
+page-500-full-page
+{/block}

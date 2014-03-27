@@ -13,7 +13,25 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
     /** @var \WebLoader\LoaderFactory @inject */
     public $webLoader;
 
+    /** @var string */
+    private $lang;
+
+    protected function startup()
+    {
+        parent::startup();
+        $this->lang = "en";
+    }
+
     protected function beforeRender()
+    {
+        parent::beforeRender();
+        $this->template->lang = $this->lang;
+
+        $this->_setModuleTemplate();
+    }
+
+// <editor-fold defaultstate="collapsed" desc="private">
+    private function _setModuleTemplate()
     {
         $this->template->viewName = $this->view;
         $this->template->root = isset($_SERVER['SCRIPT_FILENAME']) ? realpath(dirname(dirname($_SERVER['SCRIPT_FILENAME']))) : NULL;
@@ -27,6 +45,9 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
             $this->template->presenterName = substr($this->name, $a + 1);
         }
     }
+
+// </editor-fold>
+// <editor-fold defaultstate="collapsed" desc="components">
 
     /** @return CssLoader */
     protected function createComponentCss()
@@ -58,4 +79,5 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
         return $this->webLoader->createJavaScriptLoader('grido');
     }
 
+// </editor-fold>
 }

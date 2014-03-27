@@ -1,9 +1,28 @@
 {var $robots = noindex}
 
 {block content}
-<h1 n:block=title>Access Denied</h1>
+<div class="page-inner">
+    <img src="{$basePath}/assets/img/pages/earth.jpg" class="img-responsive" alt="">
+</div>
+<div class="container error-404">
+    <h1>403</h1>
+    <h2>Houston, we have a problem.</h2>
+    <p>
+        You do not have permission to view this page.<br/>
+        Please try contact the web site administrator if you believe you should be able to view this page.
+    </p>
+    <p>
+        <a href="{$homepage}">Return home</a>
+        <br>
+    </p>
+</div>
+{/block}
 
-<p>You do not have permission to view this page. Please try contact the web
-site administrator if you believe you should be able to view this page.</p>
+{block title}
+Access Denied
+{/block}
 
-<p><small>error 403</small></p>
+{block bodyClass}
+{include parent}
+page-404-3
+{/block}

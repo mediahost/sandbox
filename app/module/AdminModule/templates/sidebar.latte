@@ -1,0 +1,260 @@
+{block sidebar}
+
+
+<!-- BEGIN SIDEBAR -->
+<div class="page-sidebar-wrapper">
+    <div class="page-sidebar navbar-collapse collapse">
+        <!-- add "navbar-no-scroll" class to disable the scrolling of the sidebar menu -->
+        <!-- BEGIN SIDEBAR MENU -->
+        <ul class="page-sidebar-menu" data-auto-scroll="true" data-slide-speed="200">
+            <li class="sidebar-toggler-wrapper">
+                <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                <div class="sidebar-toggler hidden-phone">
+                </div>
+                <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+            </li>
+
+            <li class="sidebar-search-wrapper">
+                <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                <form class="sidebar-search" action="#" method="POST">
+                    <div class="form-container">
+                        <div class="input-box">
+                            <a href="javascript:;" class="remove">
+                            </a>
+                            <input type="text" placeholder="Search..."/>
+                            <input type="button" class="submit" value=" "/>
+                        </div>
+                    </div>
+                </form>
+                <!-- END RESPONSIVE QUICK SEARCH FORM -->
+            </li>
+
+            <li class="start active ">
+                <a n:href="Dashboard:">
+                    <i class="fa fa-home"></i>
+                    <span class="title">
+                        Dashboard
+                    </span>
+                    <span class="selected">
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="fa fa-money"></i>
+                    <span class="title">
+                        Sales
+                    </span>
+                    <span class="arrow ">
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-shopping-cart"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-file-text-o"></i>
+                            Invoices
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="fa fa-list"></i>
+                    <span class="title">
+                        Catalog
+                    </span>
+                    <span class="arrow ">
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-file-text-o"></i>
+                            Manage Products
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-sitemap"></i>
+                            Categories
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-cogs"></i>
+                            Attributes
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-external-link"></i>
+                            URL Redirects
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-star-o"></i>
+                            Review & Ratings
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-tag"></i>
+                            Tags
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="fa fa-users"></i>
+                    <span class="title">
+                        Customers
+                    </span>
+                    <span class="arrow ">
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-file-text-o"></i>
+                            Manage Customers
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-users"></i>
+                            Customer Groups
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="fa fa-sitemap"></i>
+                    <span class="title">
+                        CMS
+                    </span>
+                    <span class="arrow ">
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-sitemap"></i>
+                            Pages
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-th-large"></i>
+                            Static Blocks
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-bullhorn"></i>
+                            Banners
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="title">
+                        Newsletter
+                    </span>
+                    <span class="arrow ">
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-file-text-o"></i>
+                            Templates
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-users"></i>
+                            Subscribers
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="fa fa-gears"></i>
+                    <span class="title">
+                        Plugins
+                    </span>
+                    <span class="arrow ">
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-gear"></i>
+                            Plugin 1
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-gear"></i>
+                            Plugin 2
+                        </a>
+                    </li>
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-gear"></i>
+                            Plugin 3
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="fa fa-puzzle-piece"></i>
+                    <span class="title">
+                        System
+                    </span>
+                    <span class="arrow ">
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a n:href="this">
+                            <i class="fa fa-gears"></i>
+                            System helpers
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="last ">
+                <a n:href=":Front:Homepage:">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="title">
+                        Shop
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+</div>
+<!-- END SIDEBAR -->

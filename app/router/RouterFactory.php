@@ -23,7 +23,7 @@ class RouterFactory
 
         $router[] = $adminRouter = new RouteList('Admin');
         $adminRouter[] = new Route("admin/<presenter>/<action>[/<id>]", array(
-            'presenter' => "Default",
+            'presenter' => "Dashboard",
             'action' => "default",
             'id' => NULL,
         ));
