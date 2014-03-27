@@ -22,6 +22,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/mediahost/adminer-custom"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mediahost/WebLoader.git"
         }
     ],
     "require": {
@@ -29,7 +33,7 @@
         "nette/nette": "~2.1.1",
         "dg/adminer-custom": "@dev",
         "kdyby/doctrine": "1.*",
-        "janmarek/webloader": "2.2.0",
+        "janmarek/webloader": "@dev",
         "o5/grido": "dev-master",
         "rm/header": "dev-master",
         "natxet/CssMin": "dev-master",
